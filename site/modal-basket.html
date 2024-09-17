@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form class="form-basket" action="#" method="get">
+
+        <!-- Общий див для товаров в корзине -->
+        <div class="form-basket__content">
+
+            <div class="basket__item-box form-basket__item-box form-basket__item-box_first">
+                <div class="basket__item-box_left form-basket__box-left">
+                    <img class="basket__picture form-basket__box-left_img" src="img/MENU.jpeg" alt="Стол MENU">
+                    <div class="item form-basket__item">
+                        <h4 class="item__title">Стол MENU</h4>
+                        <p class="item__price">34 000 руб.</p>
+                        <div class="item__link-box form-basket__link-box">
+                            <a class="item__link" href="#">Избранные</a>
+                            <a class="item__link" href="#">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+                <input class="basket__input" type="number" value="1" min="1">
+            </div>
+
+            <div class="basket__item-box form-basket__item-box">
+                <div class="basket__item-box_left form-basket__box-left">
+                    <img class="basket__picture form-basket__box-left_img" src="img/NASTAN.jpeg" alt="Диван NASTAN">
+                    <div class="item form-basket__item">
+                        <h4 class="item__title">Диван NASTAN</h4>
+                        <p class="item__price">80 000 руб.</p>
+                        <div class="item__link-box form-basket__link-box">
+                            <a class="item__link" href="#">Избранные</a>
+                            <a class="item__link" href="#">Удалить</a>
+                        </div>
+                    </div>
+                </div>
+                <input class="basket__input" type="number" value="1" min="1">
+            </div>
+
+        </div>
+
+        <!-- Общий див для итоговой цены и кнопки -->
+        <div class="bform-price">
+
+            <div class="bform-price__price-box">
+                <p class="basket-form__finalprace bform-price__finalprace">Итого: 114 000 руб.</p>
+            </div>
+
+            <div>
+                <button class="filtering-form__button button" type="submit">Оформить заказ</button>
+            </div>
+
+        </div>
+
+    </form>
+
+</body>

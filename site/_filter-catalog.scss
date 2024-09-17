@@ -1,0 +1,331 @@
+
+.conteiner {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: flex-end;
+}
+
+.filter-button-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    border: 1px solid $color-text-2;
+    border-radius: 20px;
+    min-height: 40px;
+    font: inherit;
+    padding: 10px 23px;
+    cursor: pointer;
+    background-color: $color-text;
+}
+
+.filter-button {
+    font-weight: 500;
+    text-align: start;
+    max-width: 182px;
+    width: 100%;
+    border-color: lightgrey;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 20px;
+    position: relative;
+    background-image: url(img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    padding-right: 22px;
+}
+
+// Форма фильтров
+.filtering-form { 
+    position: absolute;
+    top: calc(100% + 14px);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 36px;
+    background-color: $color-text;
+    box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+    padding: 40px 48px;
+    right: 260px;
+    z-index: 1;
+}
+
+.filtering-form__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px 65px;
+    max-height: 548px;
+    min-width: 548px;
+}
+//  Сроки доставки
+.filtering-form__fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    border: none;
+}
+
+.filtering-form__fieldset-type {
+    padding-right: 40px;
+}
+
+.filtering-form__legend {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.filtering-form__button {
+    align-self: flex-end;
+    max-width: 190px;
+    width: 100%;   
+}
+
+.filtering-form__button:hover {
+    background-color: $color-text-2;
+    color: $color-text;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.radio__label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.radio__label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border: 1px solid #888888;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background-color: $color-text;
+}
+
+.radio__input {
+display: none;
+}
+
+.radio__input:checked + .radio__label::before {
+    border-color: $color-text;
+    background-image: url(img/chek.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: $color-text-2;
+}
+
+// Цена
+.range {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.range__label {
+    font-size: 14px;
+}
+
+.range__slider {
+    font-family: sans-serif;
+    font-size: 14px;
+    position: relative;
+    height: 20px;
+    width: 210px;
+    display: inline-block;
+    margin-top: -5px;
+}
+
+.range__slider input {
+     position: absolute;
+}
+
+
+.range__input {
+    width: 190px;
+    height: 10px;
+    overflow: hidden;
+    outline: none;
+}
+
+.range__input,
+.range__input::-webkit-slider-runnable-track,
+.range__input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: none;
+}
+
+.range__input::-webkit-slider-runnable-track {
+    width: 200px;
+    height: 1px;
+    background: $color-text-2;
+}
+
+.range__input:nth-child(2)::-webkit-slider-runnable-track {
+    background: none;
+}
+
+.range__input::-webkit-slider-thumb {
+    position: relative;
+    height: 8px;
+    width: 8px;
+    margin-top: -4px;
+    background: $color-text-2;
+    border: 1px solid $color-text-2;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.range__input::-webkit-slider-thumb:active {
+    cursor: grabbing;
+}
+
+.range__input:nth-child(1)::-webkit-slider-thumb {
+    z-index: 2;
+}
+
+// Цвет
+.color-options {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 190px;
+    gap: 14px;
+}
+
+.color-options__checkbox {
+    width: 15px;
+    height: 15px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox__input {
+display: none;
+}
+
+.checkbox__lable {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.checkbox__lable::before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #888888;
+    position: absolute;
+    left: 0;
+    background-color: $color-text;
+}
+
+.checkbox__input:checked + .checkbox__lable::before {
+    border-color: $color-text;
+    background-image: url(img/chek.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: $color-text-2;
+}
+
+// Цвета чеков
+.checkbox__lable-white::before {
+    background-color: $color-text;
+    border-color: #808080;
+}
+
+.checkbox__lable-black::before {
+    background-color: $color-text-2;
+    border-color: $color-text-2;
+}
+
+.checkbox__lable-grey::before {
+    background-color: #737373;
+    border-color: #737373;
+}
+
+.checkbox__lable-red::before {
+    background-color: red;
+    border-color: red;
+}
+
+.checkbox__lable-orange::before {
+    background-color: #ff4500;
+    border-color: #ff4500;
+}
+
+.checkbox__lable-yellow::before {
+    background-color: #ff0;
+    border-color: #ff0;
+}
+
+.checkbox__lable-green::before {
+    background-color: #008000;
+    border-color: #008000;
+}
+
+.checkbox__lable-turquoise::before {
+    background-color: turquoise;
+    border-color: turquoise;
+}
+
+.checkbox__lable-lightblue::before {
+    background-color: lightblue;
+    border-color: lightblue;
+}
+
+.checkbox__lable-blue::before {
+    background-color: blue;
+    border-color: blue;
+}
+
+.checkbox__lable-purple::before {
+    background-color: #800080;
+    border-color: #800080;
+}
+
+.checkbox__lable-violet::before {
+    background-color: #8a2be2;
+    border-color: #8a2be2;
+}
+
+.checkbox__lable-lavender::before {
+    background-color: #d89aff;
+    border-color: #d89aff;
+}
+
+.checkbox__lable-pink::before {
+    background-color: #ff1493;
+    border-color: #ff1493;
+}
+
+.checkbox__input:checked + .checkbox__lable-black::before,
+.checkbox__input:checked + .checkbox__lable-blue::before,
+.checkbox__input:checked + .checkbox__lable-purple::before {
+    background-image: url(img/chekwhite.svg);
+}

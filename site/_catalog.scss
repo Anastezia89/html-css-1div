@@ -1,0 +1,121 @@
+
+.catalog__top {
+    background-image: url(img/c.topback.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+.title__catalog {
+    padding-top: 64px; 
+}
+
+.section__catalog_nav {
+
+}
+
+.nav__catalog-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__nav_catalog {
+    color: $color-text-2;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    text-decoration: none;
+    gap: 10px;
+    margin-top: 64px;
+    margin-bottom: 41px;
+}
+
+.nav__nav_catalog:hover {
+    text-decoration:underline;
+    color: $color-text-2;
+}
+
+.nav__glav {
+    width: 66px;
+}
+
+.nav__slesh {
+    width: 6px;
+}
+
+.nav__catalog-item {
+    width: 137px;
+}
+
+.ctl-nav__filter {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 61px;
+    margin-bottom: 36px;
+    position: relative;
+}
+
+select {
+    appearance: none;
+    width: auto;
+    padding: 4px;
+    border-color: #aaa;
+    border-radius: 3px; 
+}
+
+.nav__filter {
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 20px;
+    position: relative;
+    background-image: url(img/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    padding-right: 22px;
+}
+
+.nav__filter_filter {
+    font-family: Montserrat;
+    width: 182px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: $color-text-2;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    padding-left: 23px;
+}
+
+.nav__filter_popular {
+    font-family: Montserrat;
+    width: 227px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: $color-text-2;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    padding-left: 23px;
+}
+
+.catalog__product-box {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 48px;
+}

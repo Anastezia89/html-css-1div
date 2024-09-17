@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="conteiner center">
+        <div class="filter-button-wrapper">
+            <button class="button filter-button">Фильтрация</button>
+            <form class="filtering-form" action="#" method="get">
+
+             <!-- Общий див всего фильтра -->
+                <div class="filtering-form__content-wrapper">
+                    <!-- Сроки доставки, цена и цвет -->
+                    
+                    <!-- Сроки доставки -->
+                    <fieldset class="filtering-form__fieldset">
+                        <legend class="filtering-form__legend">Сроки доставки</legend>
+                            
+                        <div class="radio">
+                            <input class="radio__input" type="radio" id="dnot" name="delivery-time" value="dnot" checked>
+                            <label class="radio__label" for="dnot">Неважно</label> 
+                        </div>
+                                
+                        <div class="radio">
+                            <input class="radio__input" type="radio" id="today" name="delivery-time" value="today">
+                            <label class="radio__label" for="today">Сегодня</label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="radio__input" type="radio" id="tomorrow" name="delivery-time" value="tomorrow">
+                            <label class="radio__label" for="tomorrow">Завтра</label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="radio__input" type="radio" id="threeDay" name="delivery-time" value="threeDay">
+                            <label class="radio__label" for="threeDay">До 3 дней</label>
+                        </div>
+
+                        <div class="radio">
+                            <input class="radio__input" type="radio" id="sevenDay" name="delivery-time" value="sevenDay">
+                            <label class="radio__label" for="sevenDay">До 7 дней</label>
+                        </div>
+
+                    </fieldset>
+
+                    <!-- Цена -->
+                    <fieldset class="filtering-form__fieldset">
+                        <legend class="filtering-form__legend">Цена</legend>
+                        <div class="range"><!-- Ползунки -->
+                            <label class="range__label" for="price-range">от 0 руб. до 100000 руб.</label>
+                            <div class="range__slider"> 
+                                <input class="range__input range__input-min" type="range" name="range_1" min="1" max="100000" value="1">
+                                <input class="range__input range__input-max" type="range" name="range_2" min="1" max="100000" value="100000">  
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Цвет -->
+                    <fieldset class="filtering-form__fieldset">
+                            <legend class="filtering-form__legend">Цвет</legend>
+                            <div class="color-options"><!-- Чекбоксы 14 -->
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="white">
+                                    <label class="checkbox__lable checkbox__lable-white" for="white"></label>
+                                </div>
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="black">
+                                    <label class="checkbox__lable checkbox__lable-black" for="black"></label>
+                                </div>
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="grey">
+                                    <label class="checkbox__lable checkbox__lable-grey" for="grey"></label>
+                                </div>
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="red">
+                                    <label class="checkbox__lable checkbox__lable-red" for="red"></label>
+                                </div>
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="orange" checked>
+                                    <label class="checkbox__lable checkbox__lable-orange" for="orange"></label>
+                                </div>
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="yellow" checked>
+                                    <label class="checkbox__lable checkbox__lable-yellow" for="yellow"></label>
+                                </div>
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="green">
+                                    <label class="checkbox__lable checkbox__lable-green" for="green"></label>
+                                </div>
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="turquoise">
+                                    <label class="checkbox__lable checkbox__lable-turquoise" for="turquoise"></label>
+                                </div>
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="lightblue">
+                                    <label class="checkbox__lable checkbox__lable-lightblue" for="lightblue"></label>
+                                </div>
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="blue">
+                                    <label class="checkbox__lable checkbox__lable-blue" for="blue"></label>
+                                </div>
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="purple">
+                                    <label class="checkbox__lable checkbox__lable-purple" for="purple"></label>
+                                </div>
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="violet">
+                                    <label class="checkbox__lable checkbox__lable-violet" for="violet"></label>
+                                </div>
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="lavender" checked>
+                                    <label class="checkbox__lable checkbox__lable-lavender" for="lavender"></label>
+                                </div>
+
+                                <div class="checkbox color-options__checkbox">
+                                    <input class="checkbox__input" type="checkbox" id="pink">
+                                    <label class="checkbox__lable checkbox__lable-pink" for="pink"></label>
+                                </div>
+
+                            </div>
+                    </fieldset>
+
+                    <!--Фильтр Тип комнаты -->
+                    <fieldset class="filtering-form__fieldset filtering-form__fieldset-type">
+                        <legend class="filtering-form__legend">Тип комнаты</legend>
+                        
+                        <div class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="room-type" id="KitchenDiningRoom" value="KitchenDiningRoom" checked>
+                            <label class="checkbox__lable" for="KitchenDiningRoom">Кухня и столовая</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="room-type" id="bathroom" value="bathroom" checked>
+                            <label class="checkbox__lable" for="bathroom">Ванная комната</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="room-type" id="ChildrenRoom" value="ChildrenRoom">
+                            <label class="checkbox__lable" for="ChildrenRoom">Детская комната</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="room-type" id="HomeOffice" value="HomeOffice">
+                            <label class="checkbox__lable" for="HomeOffice">Домашний офис</label>
+                        </div>
+                        
+                        <div class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="room-type" id="LivingRoom" value="LivingRoom">
+                            <label class="checkbox__lable" for="LivingRoom">Гостиная</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="room-type" id="hallway" value="hallway">
+                            <label class="checkbox__lable" for="hallway">Прихожая</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="room-type" id="bedroom" value="bedroom">
+                            <label class="checkbox__lable" for="bedroom">Спальня</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="room-type" id="wardrobe" value="wardrobe">
+                            <label class="checkbox__lable" for="wardrobe">Гардероб</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="room-type" id="CountryHouse" value="CountryHouse">
+                            <label class="checkbox__lable" for="CountryHouse">Дача</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input class="checkbox__input" type="checkbox" name="room-type" id="light" value="light">
+                            <label class="checkbox__lable" for="light">Свет</label>
+                        </div>
+
+                    </fieldset>
+
+                </div>
+
+                <button class="filtering-form__button button" type="submit">Применить</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+
+.form-basket {
+    position: absolute;
+    top: calc(100% + 20px);
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-text;
+    box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+    padding: 40px 48px;
+
+    .form-basket__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-basket__item-box {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        gap: 69px;
+        justify-content: flex-start;
+        
+    }
+
+    .form-basket__item-box_first {
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .form-basket__box-left {
+        display: flex;
+        gap: 24px;
+
+        .form-basket__box-left_img {
+            width: 144px;
+            height: 144px;
+        }
+    }
+
+    .form-basket__item {
+        max-width: 190px;
+        display: flex;
+        gap: 12px;
+    }
+
+    .form-basket__link-box {
+        display: flex;
+        gap: 24px;
+        margin-top: 42px;
+    }
+}
+
+.bform-price {
+    display: flex;
+    justify-content: space-between;
+
+    &__price-box {
+        padding: 0;
+        padding-top: 3px;
+    }
+
+    &__finalprace {
+        padding: 0;
+    }
+
+    .bform-price__button:hover {
+        background-color: $color-text-2;
+        color: $color-text;
+    }
+}
+
