@@ -13,10 +13,10 @@
 </head>
 
 <body>
-    <div class="catalog__top center">
-        <header class="header">
-            <a href="index.html"><img class="logo" src="img/logo.svg" alt="Интерьер."></a>
-                <input class="header__input" type="text" placeholder="Поиск">
+    <div class="ct center">
+        <header class="top__header">
+            <a href="index.html"><img class="top__header_logo" src="img/logo.svg" alt="Интерьер."></a>
+                <input class="top__header_header-input" type="text" placeholder="Поиск">
                 <nav class="nav">
                     <a class="nav__link" href="catalog.html">Каталог</a>
                     <a class="nav__link" href="basket.html">Корзина</a>
@@ -29,20 +29,20 @@
                 </div>
 
         </header>
-            <h1 class="title title__catalog">Каталог</h1>
+        <h1 class="top__content_title ct__title-c">Каталог</h1>
     
     </div>
 
-    <section class="section__catalog_nav center">
-        <div class="nav__catalog">
+    <section class="section-cn center">
+        <div class="nc">
 
-            <div class="nav__catalog-nav">
-                <a class="nav__nav_catalog nav__glav" href="index.html">Главная</a>
-                <p class="nav__nav_catalog nav__slesh">/</p>
-                <a class="nav__nav_catalog nav__catalog-item" href="catalog.html">Каталог товаров</a>
+            <div class="nc__nav">
+                <a class="nc__nav_catalog nc__nav_catalog-glav" href="index.html">Главная</a>
+                <p class="nc__nav_catalog nc__nav_catalog-slesh">/</p>
+                <a class="nc__nav_catalog nc__nav_catalog-item" href="catalog.html">Каталог товаров</a>
             </div>
 
-            <div class="ctl-nav__filter">
+            <div class="nc__filtering">
                 
                 <form class="filtering-form" action="#" method="get">
 
@@ -233,26 +233,26 @@
        
                 </form>
 
-                    <select class="nav__filter nav__filter_filter" id="Фильтрация">
-                        <option value="filter">Фильтрация</option>
-                        <option value="color">Цвет</option>
-                        <option value="data">Доставка</option>
-                        <option value="type">Тип комнаты</option>
-                        <option value="price">Цена</option>
-                    </select>
+                <select class="nc__filtering_nav-filter nc__filtering_nav-filter-filter" id="Фильтрация">
+                    <option value="filter">Фильтрация</option>
+                    <option value="color">Цвет</option>
+                    <option value="data">Доставка</option>
+                    <option value="type">Тип комнаты</option>
+                    <option value="price">Цена</option>
+                </select>
 
-                    <select class="nav__filter nav__filter_popular" id="Популярность">
-                        <option value="popular">По популярности</option>
-                        <option value="minprice">Начать с низких цен</option>
-                        <option value="maxprice">Начать с высоких цен</option>
-                    </select>
+                <select class="nc__filtering_nav-filter nc__filtering_nav-filter-popular" id="Популярность">
+                    <option value="popular">По популярности</option>
+                    <option value="minprice">Начать с низких цен</option>
+                    <option value="maxprice">Начать с высоких цен</option>
+                </select>
                 
             </div>
 
         </div>
     </section>
 
-    <section class="catalog__product-box center">
+    <section class="ct__product-box center">
 
         <article class="article">
             <div class="article__teg">
@@ -261,9 +261,9 @@
             </div>
             <img class="article__img" src="img/TATRAN_2.jpeg" alt="Кровать TATRAN">
             <h3 class="article__title">Кровать TATRAN</h3>
-            <p class="article__paragraph_type-a">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+            <p class="article__paragraph">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
             <div class="article__price">
-                <p class="article__paragraph">120 000 руб.</p>
+                <p class="article__price_paragraph">120 000 руб.</p>
             </div>
         </article>
         <article class="article">
@@ -273,9 +273,9 @@
             </div>
             <img class="article__img" src="img/VILORA.jpg" alt="Кресло VILORA">
             <h3 class="article__title">Кресло VILORA</h3>
-            <p class="article__paragraph_type-a">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
+            <p class="article__paragraph">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
             <div class="article__price">
-                <p class="article__paragraph">21 000 руб.</p>
+                <p class="article__price_paragraph">21 000 руб.</p>
             </div>
         </article>
         <article class="article">
@@ -285,9 +285,9 @@
             </div>
             <img class="article__img" src="img/MENU_2.jpeg" alt="Стол MENU">
             <h3 class="article__title">Стол MENU</h3>
-            <p class="article__paragraph_type-a">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+            <p class="article__paragraph">Европейский дуб - отличается особой прочностью и стабильностью.</p>
             <div class="article__price">
-                <p class="article__paragraph">34 000 руб.</p>
+                <p class="article__price_paragraph">34 000 руб.</p>
             </div>
         </article>
         <article class="article">
@@ -297,9 +297,9 @@
             </div>
             <img class="article__img" src="img/ASKESTA_2.jpeg" alt="Диван ASKESTA">
             <h3 class="article__title">Диван ASKESTA</h3>
-            <p class="article__paragraph_type-a">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать.</p>
+            <p class="article__paragraph">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать.</p>
             <div class="article__price">
-                <p class="article__paragraph">68 000 руб.</p>
+                <p class="article__price_paragraph">68 000 руб.</p>
             </div>
         </article>
         <article class="article">
@@ -309,9 +309,9 @@
             </div>
             <img class="article__img" src="img/LUNAR_2.jpeg" alt="Кресло LUNAR">
             <h3 class="article__title">Кресло LUNAR</h3>
-            <p class="article__paragraph_type-a">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки.</p>
+            <p class="article__paragraph">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки.</p>
             <div class="article__price">
-                <p class="article__paragraph">40 000 руб.</p>
+                <p class="article__price_paragraph">40 000 руб.</p>
             </div>
         </article>
         <article class="article">
@@ -321,9 +321,9 @@
             </div>
             <img class="article__img" src="img/Nastan_2.jpeg" alt="Шкаф Nastan">
             <h3 class="article__title">Шкаф Nastan</h3>
-            <p class="article__paragraph_type-a">Мебель может быть оснащена разнообразными системами подсветки.</p>
+            <p class="article__paragraph">Мебель может быть оснащена разнообразными системами подсветки.</p>
             <div class="article__price">
-                <p class="article__paragraph">80 000 руб.</p>
+                <p class="article__price_paragraph">80 000 руб.</p>
             </div>
         </article>
         <article class="article">
@@ -333,9 +333,9 @@
             </div>
             <img class="article__img" src="img/TATRAN_2.jpeg" alt="Кровать TATRAN">
             <h3 class="article__title">Кровать TATRAN</h3>
-            <p class="article__paragraph_type-a">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
+            <p class="article__paragraph">Основание из полированной нержавеющей стали, придает оригинальный парящий эффект.</p>
             <div class="article__price">
-                <p class="article__paragraph">120 000 руб.</p>
+                <p class="article__price_paragraph">120 000 руб.</p>
             </div>
         </article>
         <article class="article">
@@ -345,9 +345,9 @@
             </div>
             <img class="article__img" src="img/VILORA.jpg" alt="Кресло VILORA">
             <h3 class="article__title">Кресло VILORA</h3>
-            <p class="article__paragraph_type-a">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
+            <p class="article__paragraph">Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и приятная на ощупь ткань.</p>
             <div class="article__price">
-                <p class="article__paragraph">21 000 руб.</p>
+                <p class="article__price_paragraph">21 000 руб.</p>
             </div>
         </article>
         <article class="article">
@@ -357,9 +357,9 @@
             </div>
             <img class="article__img" src="img/MENU_2.jpeg" alt="Стол MENU">
             <h3 class="article__title">Стол MENU</h3>
-            <p class="article__paragraph_type-a">Европейский дуб - отличается особой прочностью и стабильностью.</p>
+            <p class="article__paragraph">Европейский дуб - отличается особой прочностью и стабильностью.</p>
             <div class="article__price">
-                <p class="article__paragraph">34 000 руб.</p>
+                <p class="article__price_paragraph">34 000 руб.</p>
             </div>
         </article>
         <article class="article">
@@ -369,9 +369,9 @@
             </div>
             <img class="article__img" src="img/ASKESTA_2.jpeg" alt="Диван ASKESTA">
             <h3 class="article__title">Диван ASKESTA</h3>
-            <p class="article__paragraph_type-a">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать.</p>
+            <p class="article__paragraph">Благодаря защелкивающемуся механизму диван легко раскладывается в комфортную кровать.</p>
             <div class="article__price">
-                <p class="article__paragraph">68 000 руб.</p>
+                <p class="article__price_paragraph">68 000 руб.</p>
             </div>
         </article>
         <article class="article">
@@ -381,9 +381,9 @@
             </div>
             <img class="article__img" src="img/LUNAR_2.jpeg" alt="Кресло LUNAR">
             <h3 class="article__title">Кресло LUNAR</h3>
-            <p class="article__paragraph_type-a">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки.</p>
+            <p class="article__paragraph">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки.</p>
             <div class="article__price">
-                <p class="article__paragraph">40 000 руб.</p>
+                <p class="article__price_paragraph">40 000 руб.</p>
             </div>
         </article>
         <article class="article">
@@ -393,9 +393,9 @@
             </div>
             <img class="article__img" src="img/Nastan_2.jpeg" alt="Шкаф Nastan">
             <h3 class="article__title">Шкаф Nastan</h3>
-            <p class="article__paragraph_type-a">Мебель может быть оснащена разнообразными системами подсветки.</p>
+            <p class="article__paragraph">Мебель может быть оснащена разнообразными системами подсветки.</p>
             <div class="article__price">
-                <p class="article__paragraph">80 000 руб.</p>
+                <p class="article__price_paragraph">80 000 руб.</p>
             </div>
         </article>
     </section>
@@ -409,30 +409,30 @@
         
         <div class="footer__contents">
 
-            <div class="footer__info">
-                <div class="footer__nav">
-                    <h4 class="footer__title_menu">Меню</h4>
-                        <a class="footer__link_underline" href="index.html">Главная</a>
-                        <a class="footer__link_underline" href="catalog.html">Каталог</a>
-                        <a class="footer__link_underline" href="basket.html">Корзина</a>
+            <div class="footer__contents_info">
+                <div class="footer__contents_info_nav">
+                    <h4 class="footer__contents_info_nav_menu">Меню</h4>
+                        <a class="footer__contents_info_nav_menu_link-underline" href="index.html">Главная</a>
+                        <a class="footer__contents_info_nav_menu_link-underline" href="catalog.html">Каталог</a>
+                        <a class="footer__contents_info_nav_menu_link-underline" href="basket.html">Корзина</a>
                 </div>
            
-                <div class="footer__item">
-                    <h4 class="footer__title">Контакты</h4>
-                       <a class="footer__link" href="tel:+79088008080">+7 908-800-80-80</a>
-                       <a class="footer__link" href="mailto:help@interier.com">help@interier.com</a>
-                    <div class="footer__icons">
-                       <a class="footer__teg_link-1" href="#"></a>
-                       <a class="footer__teg_link-2" href="#"></a>
-                       <a class="footer__teg_link-3" href="#"></a>
+                <div class="footer__contents_info_item">
+                    <h4 class="footer__contents_info_item_title">Контакты</h4>
+                       <a class="footer__contents_info_item_title_link" href="tel:+79088008080">+7 908-800-80-80</a>
+                       <a class="footer__contents_info_item_title_link" href="mailto:help@interier.com">help@interier.com</a>
+                    <div class="footer__contents_info_item_icons">
+                       <a class="footer__contents_info_item_icons_teg-1" href="#"></a>
+                       <a class="footer__contents_info_item_icons_teg-2" href="#"></a>
+                       <a class="footer__contents_info_item_icons_teg-3" href="#"></a>
                     </div>
                 </div>
             </div>
            
-            <form class="footer__form">
-                <p class="form__paragraph">Получайте наши новости и обновления</p>
-                <input class="form__input" type="email" placeholder="Ваш e-mail">
-                <button class="form__button">Подписаться</button>
+            <form class="footer__contents_form">
+                <p class="footer__contents_form_paragraph">Получайте наши новости и обновления</p>
+                <input class="footer__contents_form_input" type="email" placeholder="Ваш e-mail">
+                <button class="footer__contents_form_button">Подписаться</button>
             </form>
 
         </div>
